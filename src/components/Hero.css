@@ -3,7 +3,8 @@
 
 }
 .hero_pic{
-    height: 541px;
+    height: 12%;
+    max-height: 550px;
     width: auto;
 }
 .hero_section{
@@ -31,18 +32,21 @@
     font-weight:600;
     font-size: clamp(40px, 300%, 150px);
     text-align: left;
+    padding: auto;
 }
 
 .col2_body{
+    size:550px;
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
     font-weight:400;
-    font-size: 20px;
+    font-size: clamp(20px, 50%, 50px);
+    padding-bottom:4%;
 }
 
 .talk{
     border-radius: 18px;
     border: 3px solid;
-    max-width: 20%;
+    width: 143px;
 }
