@@ -48,7 +48,7 @@
   justify-content: space-around;
   align-items: center;
   flex: 3;
-  margin: 15px 0px;
+  margin: 12px 0px;
   max-width: 280px;
   transition: 0.5s;
 }
@@ -56,7 +56,7 @@
 
 .lower_part_topics_grid{
   display: flex;
-  position: relative;
+  position: relative;  
 }
 
 .head_line {
@@ -71,7 +71,7 @@
   text-decoration: none;
   color: #4B4F53;
   font-weight: 500;
-
+  height: 25px;
 }
 
 .topics{
@@ -86,6 +86,17 @@
   color: rgba(75, 79, 83, 0.6);
   padding-bottom: 15px;
 }
+
+.low_line p{
+  padding-top: 0.5px;
+}
+
+.copyright_icon{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+
 .logo{
   display: flex;
   justify-content: center;

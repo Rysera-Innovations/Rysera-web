@@ -1,5 +1,5 @@
 import styles from "../styles/Footer.module.css";
-import { FacebookLogo, InstagramLogo, LinkedinLogo, TiktokLogo, TwitterLogo } from "@phosphor-icons/react";
+import { FacebookLogo, InstagramLogo, LinkedinLogo, TiktokLogo, TwitterLogo, Copyright } from "@phosphor-icons/react";
 import logo from "../assets/rysera-logo.png"
 
 const Footer = () => {
@@ -41,7 +41,7 @@ const Footer = () => {
             <img src={logo}/>
           </div>
           <div className={styles.low_line}>
-            <p>2023 Rysera inovations</p>
+            <div className={styles.copyright_icon}><Copyright/><p>2023 Rysera inovations</p></div>
             <p>All rights reserved</p>
           </div>
         </div>
