@@ -1,4 +1,5 @@
 import "./App.css";
+import Aboutusb from "./components/Aboutusb";
 import Navbar from "./components/Navbar";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <div className="App">
         <Navbar />
+        <Aboutusb/>
       </div>
     </>
   );
