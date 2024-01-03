@@ -1,0 +1,48 @@
+.hero{
+    background-color: white;
+
+}
+.hero_pic{
+    height: 541px;
+    width: auto;
+}
+.hero_section{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+}
+.column1{
+    display:flex;
+    size: 30%;
+}
+
+.column2{
+    flex-direction: column;
+    display:flex;
+    size: 45%;
+}
+
+.col2_head{
+    width:440px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+    font-size: clamp(40px, 300%, 150px);
+    text-align: left;
+}
+
+.col2_body{
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-weight:400;
+    font-size: 20px;
+}
+
+.talk{
+    border-radius: 18px;
+    border: 3px solid;
+    max-width: 20%;
+}
