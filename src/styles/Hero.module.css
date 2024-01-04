@@ -14,9 +14,9 @@
     white-space: nowrap;
 }
 .hero_background_2 {
-    z-index: 0;
+    z-index: 1;
     position: absolute;
-    top: 86vh;
+    top: 68vh;
     right: 40vw;
     font-family: 'Roboto', sans-serif;
     font-size: clamp(6rem, 10vw, 10rem);

@@ -1,11 +1,15 @@
 .hero{
   background-color: white;
+  z-index: 3;
+  margin-top: 5%;
+  margin-bottom: 4%;
 
 }
 .hero_pic {
   max-width: 100%;
   height: auto;
-  max-height: 570px;
+  max-height: 45vw;
+  z-index: 2;
 }
 
 
@@ -15,12 +19,14 @@
   justify-content:center;
   align-content:center;
   position: relative;
-  padding: 4%;
   align-self: center;
+  align-items:center;
+  max-width: 100vw;
+  height:auto;
+  padding:0cm;
 }
 .column1{
   display:flex;
-  flex-shrink:1;
   size: 30%;
   align-content: center;
 }
@@ -28,15 +34,16 @@
 .column2{
   display:flex;
   flex-direction: column;
-  width:clamp(430px, 60%, 500px);
+  width: clamp(372px, 25vw, 2000px);
 }
 
 .col2_head{
   display: flex;
   color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+  font-family: "DM Sans", "sans-serif";
   font-weight:600;
-  font-size: clamp(1px, 330%, 100px);
+  font-size:clamp(45px, 3vw, 2000px);
+  ;
   text-align: left;
   
 }
@@ -44,39 +51,25 @@
 .col2_body{
   display: flex;;
   color: black;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-family: "DM Sans", "sans-serif";
   text-align: left;
   font-weight:400;
-  font-size: clamp(20px, 50%, 50px);
+  font-size: clamp(20px, 1.2vw, 4000px);
   padding-bottom:4%;
 }
 
-.hero_pic{
-  height: clamp(120px,12%, 550px);
-  width: auto;
-  z-index: 100;
-}
-.hero_section{
-  width: 100%;
-  display:flex;
-  flex-direction:row;
-  justify-content:center;
-  align-items:center;
-  height: 100vh;
-  padding:0;
-}
 
 .talk{
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  font-family: "DM Sans", "sans-serif";
   font-weight:400;
-  font-size: clamp(20px, 50%, 50px);
+  font-size: 1.2vw;
   justify-content: center;
   align-content: center;
-  border-radius: 18px;
+  border-radius: 50000px;
   border: 3px solid black;
   color: white;
   background-color: black;
-  width: 143px;
+  width: 9vw;
   transition: 0.3s;
 }
 .talk:hover{
@@ -89,20 +82,39 @@
 /* Media query for responsiveness at 768px */
 @media screen and (max-width: 768px) {
   .hero_section {
-      flex-wrap: wrap-reverse;
-      width: 100%;
-      padding: 4%;
-  }
-
-  .column1,
-  .column2 {
-      size: 100%;
-      margin: 12 px;
-  }
-
-  .hero_pic {
-      max-width: 100%;
-      height: auto;
-  }
+    flex-wrap: wrap-reverse;
+    width: 100vw !important;
 }
 
+.column1,
+.column2 {
+    size: 100% !important;
+    margin: 12px !important;
+}
+
+.hero_pic {
+    max-width: 100% !important;
+    height: auto !important;
+}
+.col2_head{
+  font-size: clamp(40px, 7vw, 2000px);
+  max-width: 100vw !important;
+  
+}
+.col2_body{
+  font-size: clamp(20px, 5vw, 4000px);
+  max-width: 100vw !important;
+}
+.talk{
+  font-size: clamp(20px, 5vw, 4000px);
+  justify-content: center;
+  align-content: center;
+  border-radius: 50000px;
+  border: 3px solid black;
+  color: white;
+  background-color: black;
+  width: 40vw;
+  transition: 0.3s;
+  
+}
+}

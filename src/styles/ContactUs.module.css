@@ -10,7 +10,7 @@
     #2a4e53 84.96%,
     #294549 97.13%
   );
-  position: relative;
+  z-index: 5;
   margin: 0 clamp(5px, 3vw, 15px);
   padding: 60px 30px;
 }

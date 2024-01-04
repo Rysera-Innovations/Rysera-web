@@ -4,3 +4,9 @@
 * {
   font-family: "DM Sans", sans-serif;
 }
+
+body{
+  overflow-x: hidden;
+  right: 0;
+  left: 0;
+}
