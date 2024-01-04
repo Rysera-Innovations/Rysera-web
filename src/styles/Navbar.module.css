@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&display=swap");
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff; 
+    padding: 20px 80px ;
+    box-shadow:0px 0px 29px -6px rgba(0, 0, 0, 1) ;
+    position: fixed; 
+    z-index:  1;
+    right: 0;
+    left: 0; 
+    top:0;
+    
+}
+.navbar .links {
+    align-items: center;
+}
+.navbar a{
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 10px;
+    font-size: clamp(0.5em, 1.5vw, 3em);
+    
+}
+.navbar .links .selected{
+    background-color: #294549;
+    border-radius: 25px;
+    color: #fff;
+    padding:15px 25px;
+}
+
+
+@media screen and (max-width:992px){
+    .navbar{
+        display:none;
+    }
+    
+}  
