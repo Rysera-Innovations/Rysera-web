@@ -23,6 +23,10 @@
     font-size: clamp(0.5em, 1.5vw, 3em);
     
 }
+.navbar a:hover{
+    color: #8a8888;
+    cursor: pointer;
+}
 .navbar .links .selected{
     background-color: #294549;
     border-radius: 25px;
