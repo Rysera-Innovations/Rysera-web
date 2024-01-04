@@ -19,10 +19,10 @@ const Hero = () => {
   }, []);
 
   const parallaxStyle1 = {
-    transform: `translateX(${scrollPosition}px)`,
+    transform: `translateX(${scrollPosition * 5}px)`,
   };
   const parallaxStyle2 = {
-    transform: `translateX(${-scrollPosition}px)`,
+    transform: `translateX(${-scrollPosition * 5}px)`,
   };
 
 
