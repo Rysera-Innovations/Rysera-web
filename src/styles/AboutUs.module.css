@@ -9,8 +9,7 @@
   justify-content: space-between;
 }
 .left_side {
-  margin-top: 80px;
-  margin-bottom: 20px;
+  display: flex;
 }
 .content_container {
   display: flex;
@@ -25,14 +24,13 @@
   width: auto;
   text-align: justify;
   color: #333333;
-  font-size: clamp(2em, 3.5vw, 3em);
+  font-size: clamp(1.9em, 3.5vw, 2.8em);
   font-weight: 600;
   word-wrap: break-word;
 }
 
 .description {
   width: auto;
-  margin-bottom: 3%;
   text-align: justify;
   color: #333333;
   font-size: clamp(1em, 2.15vw, 1.2em);
@@ -44,17 +42,23 @@
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  margin-top: 50px;
 }
 .phone {
-  min-width: 300px;
-  width: 28vw;
+  min-width: 280px;
+  width: 25vw;
   height: auto;
+  margin-top: 40px;
 }
-
+@media screen and (min-width: 1400px) {
+  .content_container {
+    margin: 0 0;
+    margin-left: auto;
+    max-width: 70%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .main {
-    padding: 50px 0;
+    padding: 35px 0;
   }
   .right_side {
     display: none;
@@ -72,5 +76,108 @@
   }
   .title {
     text-align: center;
+  }
+}
+
+.about_us_b {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 20px;
+  text-align: center;
+  border-top: #e7e7e7 5px solid;
+  border-bottom: #e7e7e7 5px solid;
+}
+.about_us_fbox {
+  display: flex;
+  padding: clamp(10px, 3vw, 30px) 0;
+  justify-content: space-between;
+  gap: clamp(30px, 5vw, 100px);
+  margin-top: 0px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .about_us_fbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+p {
+  margin: 0px;
+  text-align: center;
+  margin-top: 10px;
+  font-size: clamp(0.8em, 2vw, 1em);
+  display: inline;
+  font-weight: 600;
+  color: #434343;
+}
+.creative,
+.modern,
+.punctual,
+.reliable,
+.reasonable {
+  padding: 8px;
+  overflow: hidden;
+  position: relative;
+  width: clamp(65px, 10vw, 80px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  padding-right: 8px;
+}
+.creative_img,
+.modern_img,
+.punctual_img,
+.reliable_img,
+.reasonable_img {
+  width: 80%;
+  height: auto;
+
+  object-fit: cover;
+}
+
+.why_us {
+  width: 100px;
+  padding: 2px;
+  overflow: hidden;
+  position: relative;
+}
+.why_us p {
+  display: inline-block;
+  font-size: 1.3em;
+  transform: rotate(-90deg);
+  margin-top: 45px;
+  margin-left: 5px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .why_us_horizontal {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about_us_b {
+    padding: 20px 20px;
+  }
+  .why_us {
+    display: none;
+  }
+  .about_us_b {
+    display: flex;
+    flex-direction: column;
+  }
+  .why_us_horizontal {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333333;
   }
 }
