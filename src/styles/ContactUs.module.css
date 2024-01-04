@@ -1,4 +1,6 @@
 .container {
+  max-width: 1200px;
+  margin: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -11,7 +13,7 @@
     #294549 97.13%
   );
   position: relative;
-  margin: 0 clamp(5px, 3vw, 15px);
+  margin: 100px auto;
   padding: 60px 30px;
 }
 .title_container {
@@ -27,7 +29,7 @@
   align-items: center;
   justify-content: center;
   gap: clamp(40px, 10vw, 60px);
-  max-width: 50vw;
+  max-width: 50%;
 }
 
 .description {
@@ -71,19 +73,23 @@
 .button_text {
   color: #fff;
   text-align: justify;
-  font-size: clamp(1em, 2vw, 1.4em);
+  font-size: clamp(1em, 2vw, 1.3em);
   font-style: normal;
 }
 
 .e_mail {
   color: #fff;
-  font-size: clamp(1em, 2vw, 1.3em);
+  font-size: clamp(1em, 2vw, 1.2em);
   font-weight: 500;
   text-decoration-line: underline;
   align-items: center;
   justify-content: center;
 }
-
+@media (max-width: 1200px) {
+  .container {
+    margin: 100px 20px;
+  }
+}
 @media (max-width: 768px) {
   .container {
     gap: 40px;
