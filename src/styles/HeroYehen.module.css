@@ -86,7 +86,7 @@
   transition: 0.3s;
 }
 
-/* Media query for responsiveness at 992px */
+/* Media query for responsiveness at 768px */
 @media screen and (max-width: 768px) {
   .hero_section {
       flex-wrap: wrap-reverse;
