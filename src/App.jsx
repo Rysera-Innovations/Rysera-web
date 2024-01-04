@@ -1,21 +1,21 @@
 import "./App.css";
-<<<<<<< HEAD
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
-=======
 import AboutUs from "./components/AboutUs";
->>>>>>> eeccf1e48f569fa57eef07682e558529c9afad35
 
 function App() {
   return (
     <>
-      <div className="App">
-<<<<<<< HEAD
-        <ContactUs />
+      <div className="App-body">
+        <section>
+          <AboutUs />
+        </section>
+        <section>
+          <ContactUs />
+        </section>
+      </div>
+      <div className="footer">
         <Footer />
-=======
-        <AboutUs />
->>>>>>> eeccf1e48f569fa57eef07682e558529c9afad35
       </div>
     </>
   );
