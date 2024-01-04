@@ -1,10 +1,11 @@
 import styles from "../styles/HeroYehen.module.css"
 import styles2 from "../styles/Hero.module.css"
 import hero_pic from "../assets/hero_pic.png"
+import {Link} from 'react-scroll';
 
-const HeroYehen = () => {
+const Hero = () => {
     return ( 
-        <div className={styles.hero}>
+        <div id='Hero' className={styles.hero}>
             <span className={styles2.hero_background_1}>RYSERA INNOVATIONS</span>
             <div className={styles.hero_section}>
               <div className={styles.column1}>
@@ -13,7 +14,7 @@ const HeroYehen = () => {
               <div className={styles.column2}>
                   <div className={styles.col2_head}>Empowering your Business</div>
                   <div className={styles.col2_body}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                  <button className={styles.talk} href="#ContactUs">Let's Talk</button>
+                  <Link to='ContactUs' smooth={true} duration={500}><button className={styles.talk}>Let's Talk</button></Link>
               </div>
             </div>
             <span className={styles2.hero_background_2}>RYSERA INNOVATIONS</span>   
@@ -21,4 +22,4 @@ const HeroYehen = () => {
      );
 }
  
-export default HeroYehen;
+export default Hero;
