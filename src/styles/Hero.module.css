@@ -1,0 +1,42 @@
+
+.hero_background_1 {
+    z-index: 0;
+    position: absolute;
+    top: 3vw;
+    left: 12vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(6rem, 10vw, 10rem);
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    -webkit-text-fill-color: #F6F6F6;
+    -webkit-text-stroke-width: clamp(0.023rem, 0.01vw, 0.073rem);
+    -webkit-text-stroke-color: #d0d0d0;
+    white-space: nowrap;
+}
+.hero_background_2 {
+    z-index: 0;
+    position: absolute;
+    top: 45vw;
+    right: 38vw;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(6rem, 10vw, 10rem);
+    font-weight: 800;
+    letter-spacing: 0.3rem;
+    -webkit-text-fill-color: #F6F6F6;
+    -webkit-text-stroke-width: clamp(0.023rem, 0.01vw, 0.073rem);
+    -webkit-text-stroke-color: #d0d0d0;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 768px) {
+    .hero_background_1 {
+        left: 40vw;
+        top: 12vw;
+        
+    }
+    .hero_background_2 {
+        z-index:3;
+        right:40vw;
+        top:85vw;
+    }
+  }

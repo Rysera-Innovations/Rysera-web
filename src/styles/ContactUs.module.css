@@ -12,8 +12,13 @@
     #2a4e53 84.96%,
     #294549 97.13%
   );
+<<<<<<< HEAD
   position: relative;
   margin: 100px auto;
+=======
+  z-index: 5;
+  margin: 0 clamp(5px, 3vw, 15px);
+>>>>>>> c78fd389d178c01664f435d50f510bd7a732a103
   padding: 60px 30px;
 }
 .title_container {

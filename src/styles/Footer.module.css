@@ -6,8 +6,13 @@
 }
 
 .footer {
+<<<<<<< HEAD
   /* position: absolute;
   bottom: 0px;
+=======
+  position: absolute;
+  bottom: 0 px;
+>>>>>>> c78fd389d178c01664f435d50f510bd7a732a103
   left: 0px;
   right: 0px; */
   display: grid;
