@@ -2,7 +2,7 @@
 .hero_background_1 {
     z-index: 0;
     position: absolute;
-    top: 5vh;
+    top: 3vw;
     left: 12vw;
     font-family: 'Roboto', sans-serif;
     font-size: clamp(6rem, 10vw, 10rem);
@@ -14,10 +14,10 @@
     white-space: nowrap;
 }
 .hero_background_2 {
-    z-index: 1;
+    z-index: 0;
     position: absolute;
-    top: 68vh;
-    right: 40vw;
+    top: 45vw;
+    right: 38vw;
     font-family: 'Roboto', sans-serif;
     font-size: clamp(6rem, 10vw, 10rem);
     font-weight: 800;
@@ -27,3 +27,16 @@
     -webkit-text-stroke-color: #d0d0d0;
     white-space: nowrap;
 }
+
+@media screen and (max-width: 768px) {
+    .hero_background_1 {
+        left: 40vw;
+        top: 12vw;
+        
+    }
+    .hero_background_2 {
+        z-index:3;
+        right:40vw;
+        top:85vw;
+    }
+  }
