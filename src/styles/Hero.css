@@ -91,7 +91,7 @@
 }
 
 /* Media query for responsiveness at 992px */
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     .hero_section {
         flex-wrap: wrap-reverse;
         width: 100%;
