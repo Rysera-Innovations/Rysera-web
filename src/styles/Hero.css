@@ -2,11 +2,12 @@
     background-color: white;
 
 }
-.hero_pic{
-    height: 12%;
-    max-height: 550px;
-    width: auto;
+.hero_pic {
+    max-width: 100%;
+    height: auto;
+    max-height: 750px;
 }
+
 
 .hero_section{
     display:flex;
@@ -14,6 +15,7 @@
     justify-content:center;
     align-content:center;
     position: relative;
+    padding: 4%;
 }
 .column1{
     display:flex;
@@ -25,7 +27,7 @@
 .column2{
     display:flex;
     flex-direction: column;
-    width:clamp(430px, 50%, 500px);
+    width:clamp(430px, 60%, 500px);
 }
 
 .col2_head{
