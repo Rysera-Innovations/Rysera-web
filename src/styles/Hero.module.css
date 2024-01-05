@@ -163,7 +163,7 @@
         
     }
     .hero_background_2 {
-        z-index:3;
+        z-index:2 !important;
         right:40vw;
         top:85vw;
     }
