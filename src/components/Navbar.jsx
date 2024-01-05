@@ -1,5 +1,5 @@
 import styles from '../styles/Navbar.module.css';
-import logo from "../assets/rysera-logo.png";
+import logo from "../assets/Navbar/rysera-logo.webp";
 
 const Navbar = () => {
     return ( 

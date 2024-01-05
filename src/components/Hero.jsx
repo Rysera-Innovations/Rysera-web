@@ -1,6 +1,6 @@
 import styles from "../styles/HeroYehen.module.css"
 import styles2 from "../styles/Hero.module.css"
-import hero_pic from "../assets/hero_pic.png"
+import hero_pic from "../assets/Hero/hero_pic.webp"
 
 const HeroYehen = () => {
     return ( 
@@ -13,7 +13,7 @@ const HeroYehen = () => {
               <div className={styles.column2}>
                   <div className={styles.col2_head}>Empowering your Business</div>
                   <div className={styles.col2_body}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                  <button className={styles.talk} href="#ContactUs">Let's Talk</button>
+                  <button className={styles.talk} href="#ContactUs">Let&#39;s Talk</button>
               </div>
             </div>
             <span className={styles2.hero_background_2}>RYSERA INNOVATIONS</span>   

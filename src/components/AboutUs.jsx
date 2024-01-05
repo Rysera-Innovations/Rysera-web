@@ -1,10 +1,10 @@
 import styles from "../styles/AboutUs.module.css";
-import phone from "../assets/phone.svg";
-import creative from "../assets/Brain.png";
-import modern from "../assets/Programming.png";
-import punctual from "../assets/Love Time.png";
-import reliable from "../assets/Helping Hand.png";
-import reasonable from "../assets/Dollar Coin.png";
+import phone from "../assets/AboutUs/phone.webp";
+import creative from "../assets/AboutUs/Brain.webp";
+import modern from "../assets/AboutUs/Programming.webp";
+import punctual from "../assets/AboutUs/Love Time.webp";
+import reliable from "../assets/AboutUs/Helping Hand.webp";
+import reasonable from "../assets/AboutUs/Dollar Coin.webp";
 
 const AboutUs = () => {
   return (

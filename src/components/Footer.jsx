@@ -1,6 +1,6 @@
 import styles from "../styles/Footer.module.css";
 import { FacebookLogo, InstagramLogo, LinkedinLogo, TiktokLogo, TwitterLogo, Copyright } from "@phosphor-icons/react";
-import logo from "../assets/rysera-logo.png"
+import logo from "../assets/Footer/rysera-logo.webp"
 
 const Footer = () => {
 
