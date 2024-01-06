@@ -4,8 +4,8 @@ import hero_pic from "../assets/hero_pic.png"
 
 const HeroYehen = () => {
     return ( 
-        <div className={styles.hero}>
-            <span className={styles2.hero_background_1}>RYSERA INNOVATIONS</span>
+        <div id="hero" className={styles.hero}>
+            {/* <span className={styles2.hero_background_1}>RYSERA INNOVATIONS</span> */}
             <div className={styles.hero_section}>
               <div className={styles.column1}>
                   <img src={hero_pic} alt="Futuristic plant design" className={styles.hero_pic}/>
@@ -16,7 +16,7 @@ const HeroYehen = () => {
                   <button className={styles.talk} href="#ContactUs">Let's Talk</button>
               </div>
             </div>
-            <span className={styles2.hero_background_2}>RYSERA INNOVATIONS</span>   
+            {/* <span className={styles2.hero_background_2}>RYSERA INNOVATIONS</span>    */}
         </div>
      );
 }

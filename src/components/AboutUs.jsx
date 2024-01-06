@@ -9,7 +9,7 @@ import reasonable from "../assets/Dollar Coin.png";
 const AboutUs = () => {
   return (
     <>
-      <div className={styles.main}>
+      <div id="aboutUs"className={styles.main}>
         <div className={styles.left_side}>
           <div className={styles.content_container}>
             <div className={styles.title}>About US</div>
