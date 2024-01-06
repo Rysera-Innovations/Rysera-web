@@ -18,44 +18,46 @@ const Hero = () => {
     };
   }, []);
 
-  const parallaxStyle1 = {
-    transform: `translateX(${scrollPosition * 2}px)`,
+  const parallaxStyle = {
+    transform: `translateX(${scrollPosition * 0.1}px)`,
   };
-  const parallaxStyle2 = {
-    transform: `translateX(${-scrollPosition * 2}px)`,
+  const parallaxStyleInverse = {
+    transform: `translateX(${-scrollPosition * 0.1}px)`,
   };
 
   return (
     <div id="Hero" className={styles.hero}>
       <span className="parallax-container">
-        <span className={styles.hero_background_1} style={parallaxStyle2}>
+        <span className={styles.hero_overlay_top} style={parallaxStyleInverse}>
           RYSERA INNOVATIONS
         </span>
       </span>
       <div className={styles.hero_section}>
-        <div className={styles.column1}>
+        <div className={styles.img_container}>
           <img
             src={hero_pic}
             alt="Futuristic plant design"
             className={styles.hero_pic}
           />
         </div>
-        <div className={styles.column2}>
-          <div className={styles.col2_head}>Empowering your Business</div>
-          <div className={styles.col2_body}>
+        <div className={styles.content_container}>
+          <span className={styles.col2_head}>
+            Reimagine your world. We code it to life
+          </span>
+          <span className={styles.col2_body}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </div>
+          </span>
           <Link to="ContactUs" smooth={true} duration={500}>
-            <button className={styles.talk}>Let`s Talk</button>
+            <button className={styles.talk}>Let's Talk</button>
           </Link>
+          <span className="parallax-container">
+            <span className={styles.hero_overlay_bottom} style={parallaxStyle}>
+              RYSERA INNOVATIONS
+            </span>
+          </span>
         </div>
       </div>
-      <span className="parallax-container">
-        <span className={styles.hero_background_2} style={parallaxStyle1}>
-          RYSERA INNOVATIONS
-        </span>
-      </span>
     </div>
   );
 };
