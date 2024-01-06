@@ -5,7 +5,7 @@ const ContactUs = () => {
   return (
     <div id= "ContactUs" className={styles.container}>
       <div className={styles.title_container}>
-        <span>Let&#39;s talk about your Business</span>
+        <span>Let's talk about your Business</span>
       </div>
       <div className={styles.description_container}>
         <div className={styles.description}>
