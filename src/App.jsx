@@ -1,4 +1,6 @@
 import "./App.css";
+
+import Services from "./components/Services";
 import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
@@ -17,6 +19,9 @@ function App() {
         </section>
         <section>
           <AboutUs />
+        </section>
+        <section>
+          <Services />
         </section>
         <section>
           <ContactUs />
