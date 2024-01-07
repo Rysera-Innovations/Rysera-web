@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500&display=swap");
+/*base style*/
+
+* {
+  margin: 0px;
+}
+
+.footer {
+  /* position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px; */
+  display: grid;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: rgb(233, 233, 233);
+  padding-top: 30px;
+}
+.upper_part {
+  display: grid;
+}
+.header {
+  display: flex;
+  color: #4b4f53;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  font-size: clamp(18px, 5vw, 22px);
+  font-weight: 500;
+  line-height: normal;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon_grid {
+  display: flex;
+  margin: 5px 0;
+}
+
+.grid_corner_section {
+  flex: 1;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 3;
+  margin: 12px 0px;
+  max-width: 280px;
+  transition: 0.5s;
+}
+
+.lower_part_topics_grid {
+  display: flex;
+  position: relative;
+}
+
+.head_line {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: clamp(12px, 3vw, 14px);
+  line-height: normal;
+}
+.head_line a {
+  text-decoration: none;
+  color: #4b4f53;
+  font-weight: 500;
+  font-size: 1.2em;
+  height: 25px;
+}
+
+.topics {
+  flex: 20;
+  max-width: 500px;
+}
+
+.low_line {
+  margin-top: 30px;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: clamp(20px, 5vw, 100px);
+  text-align: center;
+  font-size: clamp(0.5em, 5vw, 0.8em);
+  color: rgba(75, 79, 83, 0.6);
+  padding-bottom: 15px;
+}
+
+.low_line p {
+  padding-top: 0.5px;
+}
+
+.copyright_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+.logo img {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  width: 100px;
+}
+
+/* animations */
+.icons a {
+  transition: 0.5s;
+  color: #4b4f53;
+}
+
+.icons a:hover {
+  transform: translateY(-4px);
+  color: black;
+}
+
+.head_line a {
+  transition: 0.2s;
+}
+
+.head_line a:hover {
+  color: black;
+  /* font-size: clamp(14px, 3vw, 15px); */
+}
+.head_line a:active {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* media brakepoints*/
+@media (max-width: 576px) {
+  .logo img {
+    position: unset;
+  }
+
+  .head_line {
+    display: none;
+  }
+
+  .low_line {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+}
