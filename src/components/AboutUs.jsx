@@ -9,15 +9,17 @@ import reasonable from "../assets/AboutUs/Dollar Coin.webp";
 const AboutUs = () => {
   return (
     <>
-      <div id="aboutUs"className={styles.main}>
+      <div className={styles.main}>
         <div className={styles.left_side}>
           <div className={styles.content_container}>
             <div className={styles.title}>About US</div>
             <div className={styles.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu
-              ultrices vitae auctor eu. Sociis natoque penatibus et magnis dis
-              parturient montes nascetur ridiculus.
+              Welcome to Rysera, where innovation meets expertise! We are a
+              dynamic team of dedicated engineers and designers who thrive on
+              transforming your boldest ideas into reality. Our mantra, "Ryse,
+              Reimagine, Repeat!" encapsulates the journey of innovation, where
+              we Ryse to the occasion, Reimagine what's possible, and Repeat the
+              cycle of excellence.
             </div>
           </div>
         </div>

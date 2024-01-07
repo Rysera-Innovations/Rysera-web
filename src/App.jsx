@@ -8,8 +8,10 @@ import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <div className="App-body">
+      <div className="header">
         <Navbar />
+      </div>
+      <div className="App-body">
         <section>
           <Hero />
         </section>

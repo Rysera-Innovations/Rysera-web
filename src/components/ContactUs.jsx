@@ -3,7 +3,7 @@ import { ArrowRight } from "@phosphor-icons/react";
 
 const ContactUs = () => {
   return (
-    <div id= "contactUs" className={styles.container}>
+    <div className={styles.container}>
       <div className={styles.title_container}>
         <span>Let's talk about your Business</span>
       </div>
