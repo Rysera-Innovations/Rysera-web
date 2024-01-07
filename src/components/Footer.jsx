@@ -7,7 +7,7 @@ const Footer = () => {
   const size = "clamp(27px, 7.5vw, 33px)";
 
   return (  
-    <div className={styles.footer}>
+    <div id="footer" className={styles.footer}>
 
       <div className={styles.upper_part}>
         <div className={styles.header}>

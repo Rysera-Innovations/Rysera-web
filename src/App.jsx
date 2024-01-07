@@ -3,11 +3,13 @@ import ContactUs from "./components/ContactUs";
 import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       <div className="App-body">
+        <Navbar />
         <section>
           <Hero />
         </section>
