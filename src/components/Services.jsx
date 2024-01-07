@@ -10,41 +10,44 @@ import raspberry from "../assets/Services/RaspberryPiLogo.webp";
 import flutter from "../assets/Services/FlutterLogo.webp";
 import analytics from "../assets/Services/GoogleAnalyticsLogo.webp";
 
-import React, { useRef, useEffect } from "react";
+import { useRef, useEffect } from "react";
 
 function Services() {
   const servicesData = [
     {
-      title: 'Web Designing',
-      description: 'From sketch to launchpad: Web design mastered with Figma & Adobe XD.',
-      images: [figma, xd] 
+      title: "Web Designing",
+      description:
+        "From sketch to launchpad: Web design mastered with Figma & Adobe XD.",
+      images: [figma, xd],
     },
     {
-      title: 'Web Development',
-      description: 'Build scalable and responsive web applications using modern technologies.',
-      images: [react, next, node, firebase] 
+      title: "Web Development",
+      description:
+        "Build scalable and responsive web applications using modern technologies.",
+      images: [react, next, node, firebase],
     },
     {
-      title: 'IOT Systems',
-      description: 'Create smart and connected systems using IOT technologies.',
-      images: [arduino, raspberry] 
+      title: "IOT Systems",
+      description: "Create smart and connected systems using IOT technologies.",
+      images: [arduino, raspberry],
     },
     {
-      title: 'Mobile applications',
-      description: 'Develop cross-platform mobile applications for iOS and Android.',
-      images: [flutter,react] 
+      title: "Mobile applications",
+      description:
+        "Develop cross-platform mobile applications for iOS and Android.",
+      images: [flutter, react],
     },
-    
-    {
-      title: 'SEO optimization',
-      description: 'Optimize websites to improve search engine rankings and increase visibility.',
-      images: [analytics] 
-    }
 
+    {
+      title: "SEO optimization",
+      description:
+        "Optimize websites to improve search engine rankings and increase visibility.",
+      images: [analytics],
+    },
   ];
-  
-  const contRefs = servicesData.map(() => useRef()); 
-  const h1Refs = servicesData.map(() => useRef()); 
+
+  const contRefs = servicesData.map(() => useRef());
+  const h1Refs = servicesData.map(() => useRef());
 
   useEffect(() => {
     const handleResize = () => {
@@ -53,11 +56,11 @@ function Services() {
       });
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     handleResize(); // Initial adjustment
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 
@@ -69,13 +72,13 @@ function Services() {
 
       <div className={styles.grid}>
         {servicesData.map((service, i) => (
-          <div className={styles.frame} key={i} >
+          <div className={styles.frame} key={i}>
             <div className={styles.container} ref={contRefs[i]}>
               <h1 ref={h1Refs[i]}>{service.title}</h1>
               <p>{service.description}</p>
               <div className={styles.imgframe}>
                 <p>Expertise</p>
-                <div className={styles.imgcontainer} >
+                <div className={styles.imgcontainer}>
                   {service.images.map((image, j) => (
                     <img src={image} alt={service.title} key={j} />
                   ))}

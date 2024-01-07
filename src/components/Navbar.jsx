@@ -52,7 +52,7 @@ const Navbar = () => {
             <Link
               spy={true}
               smooth={true}
-              offset={50}
+              offset={10}
               duration={500}
               to="hero"
               className={status == "home" ? styles.selected : ""}
@@ -65,7 +65,7 @@ const Navbar = () => {
             <Link
               spy={true}
               smooth={true}
-              offset={50}
+              offset={10}
               duration={500}
               to="aboutUs"
               className={status == "about-us" ? styles.selected : ""}
@@ -78,9 +78,9 @@ const Navbar = () => {
             <Link
               spy={true}
               smooth={true}
-              offset={50}
+              offset={10}
               duration={500}
-              to="footer"
+              to="services"
               className={status == "services" ? styles.selected : ""}
               onClick={() => setStatus("services")}
             >
@@ -91,9 +91,9 @@ const Navbar = () => {
             <Link
               spy={true}
               smooth={true}
-              offset={50}
+              offset={10}
               duration={500}
-              to="footer"
+              to=""
               className={status == "our-team" ? styles.selected : ""}
               onClick={() => setStatus("our-team")}
             >
@@ -106,7 +106,7 @@ const Navbar = () => {
           <Link
             spy={true}
             smooth={true}
-            offset={50}
+            offset={10}
             duration={500}
             to="contactUs"
             className={status == "contactus" ? styles.selected : ""}
@@ -120,7 +120,7 @@ const Navbar = () => {
             <Link
               spy={true}
               smooth={true}
-              offset={50}
+              offset={10}
               duration={500}
               to="footer"
               className={styles.contact_logo}
@@ -144,7 +144,7 @@ const Navbar = () => {
           <Link
             spy={true}
             smooth={true}
-            offset={50}
+            offset={10}
             duration={500}
             to="hero"
             className={status == "home" ? styles.selected : ""}
@@ -157,7 +157,7 @@ const Navbar = () => {
           <Link
             spy={true}
             smooth={true}
-            offset={50}
+            offset={10}
             duration={500}
             to="aboutUs"
             className={status == "about-us" ? styles.selected : ""}
@@ -170,7 +170,7 @@ const Navbar = () => {
           <Link
             spy={true}
             smooth={true}
-            offset={50}
+            offset={10}
             duration={500}
             to="services"
             className={status == "services" ? styles.selected : ""}
@@ -183,7 +183,7 @@ const Navbar = () => {
           <Link
             spy={true}
             smooth={true}
-            offset={50}
+            offset={10}
             duration={500}
             to="ourTeam"
             className={status == "our-team" ? styles.selected : ""}

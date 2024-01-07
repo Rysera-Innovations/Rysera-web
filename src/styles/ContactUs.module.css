@@ -1,6 +1,5 @@
 .container {
   max-width: 1200px;
-  margin: 100px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -13,7 +12,7 @@
     #294549 97.13%
   );
   position: relative;
-  margin: 100px auto;
+  margin: 0 auto;
   padding: 60px 30px;
 }
 .title_container {
@@ -87,7 +86,7 @@
 }
 @media (max-width: 1200px) {
   .container {
-    margin: 100px 20px;
+    margin: 0 20px;
   }
 }
 @media (max-width: 768px) {

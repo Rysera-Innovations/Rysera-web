@@ -14,16 +14,19 @@ function App() {
         <Navbar />
       </div>
       <div className="App-body">
-        <section>
+        <section id="hero" style={{ paddingTop: "50px" }}>
           <Hero />
         </section>
-        <section>
+        <section id="aboutUs" style={{ paddingTop: "100px" }}>
           <AboutUs />
         </section>
-        <section>
+        <section id="services" style={{ paddingTop: "100px" }}>
           <Services />
         </section>
-        <section>
+        <section
+          id="contactUs"
+          style={{ paddingTop: "80px", paddingBottom: "100px" }}
+        >
           <ContactUs />
         </section>
       </div>
