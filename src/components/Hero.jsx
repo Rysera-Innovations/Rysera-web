@@ -45,8 +45,8 @@ const Hero = () => {
             Reimagine your world. We code it to life
           </span>
           <span className={styles.col2_body}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Spark your vision, ignite your impact: <br></br>Ryse, Reimagine,
+            Repeat!
           </span>
           <Link to="ContactUs" smooth={true} duration={500}>
             <button className={styles.talk}>Let's Talk</button>

@@ -10,79 +10,60 @@ import raspberry from "../assets/Services/RaspberryPiLogo.webp";
 import flutter from "../assets/Services/FlutterLogo.webp";
 import analytics from "../assets/Services/GoogleAnalyticsLogo.webp";
 
-import { useRef, useEffect } from "react";
-
 function Services() {
   const servicesData = [
     {
       title: "Web Designing",
       description:
-        "From sketch to launchpad: Web design mastered with Figma & Adobe XD.",
+        "we design websites that are responsive, scalable and ignite across screens with pixel-perfect UI and optimized UX . ",
       images: [figma, xd],
     },
     {
       title: "Web Development",
       description:
-        "Build scalable and responsive web applications using modern technologies.",
+        "Our expertise spans full-stack development, ensuring websites are scalable, responsive and  functionally exceptional. Build your high-performing website with us.",
       images: [react, next, node, firebase],
     },
     {
       title: "IOT Systems",
-      description: "Create smart and connected systems using IOT technologies.",
+      description:
+        "Our solutions securely automate tasks and empower data-driven decisions for any industry. Let's unlock your smart potential together.",
       images: [arduino, raspberry],
     },
     {
       title: "Mobile applications",
       description:
-        "Develop cross-platform mobile applications for iOS and Android.",
+        "we craft captivating mobile apps for iOS & Android, optimized for performance and designed to delight. Let' us build your dream mobile app.",
       images: [flutter, react],
     },
 
     {
       title: "SEO optimization",
       description:
-        "Optimize websites to improve search engine rankings and increase visibility.",
+        "we create data-driven SEO strategies that deliver real results, dominate search and own your online space .Let our experts unlock your brand's full potential.",
       images: [analytics],
     },
   ];
 
-  const contRefs = servicesData.map(() => useRef());
-  const h1Refs = servicesData.map(() => useRef());
-
-  useEffect(() => {
-    const handleResize = () => {
-      contRefs.forEach((contRef, i) => {
-        contRef.current.style.width = `${h1Refs[i].current.offsetWidth}px`;
-      });
-    };
-
-    window.addEventListener("resize", handleResize);
-    handleResize(); // Initial adjustment
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
-    <div>
+    <div className={styles.container}>
       <div className={styles.header}>
         <span className={styles.title}>Our Services</span>
       </div>
 
       <div className={styles.grid}>
         {servicesData.map((service, i) => (
-          <div className={styles.frame} key={i}>
-            <div className={styles.container} ref={contRefs[i]}>
-              <h1 ref={h1Refs[i]}>{service.title}</h1>
+          <div className={styles.card} key={i}>
+            <div className={styles.content_container}>
+              <span>{service.title}</span>
               <p>{service.description}</p>
-              <div className={styles.imgframe}>
-                <p>Expertise</p>
-                <div className={styles.imgcontainer}>
-                  {service.images.map((image, j) => (
-                    <img src={image} alt={service.title} key={j} />
-                  ))}
-                </div>
+            </div>
+            <div className={styles.imgframe}>
+              <p>Expertise</p>
+              <div className={styles.imgcontainer}>
+                {service.images.map((image, j) => (
+                  <img src={image} alt={service.title} key={j} />
+                ))}
               </div>
             </div>
           </div>
