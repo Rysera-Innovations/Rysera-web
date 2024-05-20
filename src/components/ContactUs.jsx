@@ -10,9 +10,8 @@ const ContactUs = () => {
       <div className={styles.description_container}>
         <div className={styles.description}>
           <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu
-            ultrices vitae auctor eu.
+            Ready to Ryse? Let's talk. Drop us a message, and together, we'll
+            explore the possibilities that turn your dreams into reality.
           </span>
         </div>
         <div className={styles.button_container}>

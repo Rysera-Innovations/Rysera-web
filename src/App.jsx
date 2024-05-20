@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import AboutUs from "./components/AboutUs";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
+import Printing from "./components/3DPrinting";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
         </section>
         <section id="services" style={{ paddingTop: "100px" }}>
           <Services />
+        </section>
+        <section id="3dprinting" style={{ paddingTop: "100px" }}>
+          <Printing />
         </section>
         <section
           id="contactUs"

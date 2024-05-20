@@ -93,6 +93,19 @@ const Navbar = () => {
               smooth={true}
               offset={10}
               duration={500}
+              to="3dprinting"
+              className={status == "3dprinting" ? styles.selected : ""}
+              onClick={() => setStatus("3dprinting")}
+            >
+              3D printing
+            </Link>
+          </span>
+          <span>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={10}
+              duration={500}
               to=""
               className={status == "our-team" ? styles.selected : ""}
               onClick={() => setStatus("our-team")}
