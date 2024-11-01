@@ -3,7 +3,7 @@ import printer from "../assets/Services/3DPrinting.webp";
 
 const Printing = () => {
   const handleQuote = () => {
-    window.open("https://wa.me/94766161592", "_blank");
+    window.open("https://forms.gle/UwWhQrTrJZ8V1H1v6", "_blank");
   };
 
   return (
