@@ -8,13 +8,18 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Printing from "./components/3DPrinting";
 import { Routes, Route } from "react-router-dom";
-import { useEffect } from "react";
+
+function RedirectToStem() {
+  window.location.href =
+    "https://lace-professor-6ab.notion.site/Electronics-Day-01-19af9c1740a280ee83cfc2a71115c96f";
+  return null;
+}
 
 function App() {
   return (
     <Routes>
       <Route
-        path="/"
+        path="*"
         element={
           <>
             <div className="header">
@@ -46,13 +51,7 @@ function App() {
           </>
         }
       />
-      <Route
-        path="/stem"
-        element={useEffect(() => {
-          window.location.href =
-            "https://lace-professor-6ab.notion.site/Electronics-Day-01-19af9c1740a280ee83cfc2a71115c96f?pvs=4";
-        }, [])}
-      />
+      <Route path="/stem" element={<RedirectToStem />} />
     </Routes>
   );
 }
